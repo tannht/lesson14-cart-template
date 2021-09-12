@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Products from "./components/Products"
+import ProductsContainer from "./containers/ProductsContainer"
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Message from './components/Message';
-import Cart from './components/Cart';
+import CartContainer from './containers/CartContainer';
 function App() {
   return (
    
@@ -13,11 +13,11 @@ function App() {
         <main id="mainContainer">
           <div className="container">
             {/* Products */}
-            <Products></Products>
+            <ProductsContainer />
             {/* Message */}
             <Message />
             {/* Cart */}
-            <Cart/>
+            <CartContainer/>
           </div>
         </main>
         {/* Footer */}
